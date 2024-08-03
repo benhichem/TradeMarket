@@ -1,0 +1,24 @@
+{
+  "name": "TradeMarket",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rimraf dist/* && tsc",
+    "start": "node dist/index.js",
+    "dev": "mprocs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@destruct/logger": "^1.2.2",
+    "@types/node": "^22.1.0",
+    "mprocs": "^0.7.1",
+    "puppeteer": "^22.15.0",
+    "puppeteer-extra": "^3.3.6",
+    "puppeteer-extra-plugin-stealth": "^2.11.2",
+    "rimraf": "^6.0.1"
+  }
+}
