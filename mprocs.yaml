@@ -1,0 +1,7 @@
+procs: 
+  typescript:
+    cwd: . 
+    shell: tsc --watch
+  shell: 
+    cwd: . 
+    shell: zsh
