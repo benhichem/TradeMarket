@@ -19,6 +19,8 @@ Data to scrape:
 • Website
 • Owner name
 • Company type i.e. Limited company
+• Email
+ 
 
 
 ## initial thoughts: 

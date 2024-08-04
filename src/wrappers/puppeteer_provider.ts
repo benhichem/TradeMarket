@@ -24,8 +24,8 @@ export default class PuppeteerScrapper implements ScrapperInterface {
     this.browser_option = browser_options
       ? browser_options
       : {
-          headless: true,
-        }
+        headless: true,
+      }
 
     this.close = close
   }
@@ -43,12 +43,11 @@ export default class PuppeteerScrapper implements ScrapperInterface {
     try {
       this.logger.info('Initiating Browser ... ')
       this._browser = await puppeteer.launch(this.browser_option)
-
       this.$page = await this._browser.newPage()
       if (this.$page) {
         await this.$page.setViewport({
-          height: 1200,
-          width: 1500,
+          height: 900,
+          width: 1600,
         })
       }
       this.logger.info('Browser started successfully ...')
@@ -86,7 +85,7 @@ export default class PuppeteerScrapper implements ScrapperInterface {
     await this._cleanup()
     await this._setup()
   }
-  protected async $extract() {}
+  protected async $extract() { }
 
   async exec() {
     await this._setup()
