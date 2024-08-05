@@ -1,0 +1,1412 @@
+
+	
+
+			
+		
+			
+		
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+			
+			
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+					
+					
+						01424 538013
+						
+					
+				
+			
+			
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+					
+					
+						info@surelockhomeshastings.co
+						
+					
+				
+			
+			
+				
+				
+				
+				
+				
+			
+				
+				
+				
+				
+			
+				
+				
+			
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+					
+					
+					
+					
+					
+						
+			  
+				
+			  
+			
+						
+							
+								Home
+Services
+
+	UPVC Lock Specialist
+	Insurance rated locks
+	Keyless Locks
+	Weather Resistant Door Handles & Closures
+
+
+Our Guarantee
+Just moved House
+Contact Us
+
+							
+							
+							
+							
+				
+					
+				
+			
+						
+						
+					
+				
+				
+				
+				
+				
+				
+  
+/* #### Colors #### */ 
+  
+.nav li li a { 
+  border-bottom: 1px solid rgba(255,255,255,0.4); /* #### Dropdown border bottom #### */ 
+  font-weight: 700 !important; /* #### Dropdown font weight #### */ 
+  font-size: 16px !important; /* #### Dropdown font size #### */ 
+}
+  
+.et-menu > .menu-item-has-children > .sub-menu:before {
+  border-bottom: 12px #CB6B3D solid; /* Dropdown arrow color */
+}  
+  
+ul.et_mobile_menu li.menu-item-has-children .mobile-toggle-icon::after,
+.et-db #et-boc .et-l ul.et_mobile_menu li.menu-item-has-children .mobile-toggle-icon::after {
+	color: #000000; /* Collapsing mobile icon color */
+	background: #f1f1f1; /* Collapsing mobile icon background color */
+}
+  
+/* #### End Colors #### */ 
+
+/* ### Add a backslash \ before the number in case of a missing icon ### */  
+  
+ul.et_mobile_menu li.menu-item-has-children .mobile-toggle-icon::after,
+.et-db #et-boc .et-l ul.et_mobile_menu li.menu-item-has-children .mobile-toggle-icon::after {
+	content: '\33';
+}
+
+ul.et_mobile_menu li.menu-item-has-children.mobile-toggle-open>.mobile-toggle-icon::after,
+.et-db #et-boc .et-l ul.et_mobile_menu li.menu-item-has-children.mobile-toggle-open>.mobile-toggle-icon::after {
+	content: '\32';
+}
+
+/* ### End missing icon ### */   
+
+/* #### Dropdown Menu #### */  
+  
+.nav li li:last-child a {
+  border-bottom: 0px solid #e5e5e5; 
+}  
+  
+.nav li ul.sub-menu {
+	padding: 0px !important;
+  border-radius: 5px;
+  box-shadow: 0 5px 17px 0px rgb(0 0 0 / 25%);
+  -moz-box-shadow: 0 5px 17px 0px rgba(0,0,0,.25);
+  -webkit-box-shadow: 0 5px 17px 0px rgb(0 0 0 / 25%);
+}
+  
+.nav li li {
+  padding: 0 0px !important;
+  width: 100%;
+}
+  
+.et-menu li li a {
+  padding: 10px 20px;
+  width: 100% !important;
+}
+  
+.et-menu > .menu-item-has-children > .sub-menu:before {
+	content: '';
+  display: block;
+  position: absolute;
+  left: 20px;
+  top: -20px;
+  width: 0;
+  height: 0;
+  border-top: 8px solid transparent;
+  border-right: 12px solid transparent;
+  border-left: 12px solid transparent;
+  z-index: 1;
+}
+  
+.nav li ul {
+    right: 0!important;
+}
+  
+.et_pb_menu--without-logo .et_pb_menu__menu>nav>ul>li>a {
+    padding-bottom: 20px;
+}  
+  
+/* #### Collaping Mobile Menu #### */
+
+ul.et_mobile_menu li.menu-item-has-children .mobile-toggle-icon::after,
+.et-db #et-boc .et-l ul.et_mobile_menu li.menu-item-has-children .mobile-toggle-icon::after {
+	top: 10px;
+	position: relative;
+	font-family: "ETModules";
+	border-radius: 50%;
+	padding: 3px;
+}
+
+.et_mobile_menu .menu-item-has-children>a {
+    font-weight: 600 !important; 
+}
+
+ul.et_mobile_menu li.menu-item-has-children .mobile-toggle-icon,
+ul.et_mobile_menu li.page_item_has_children .mobile-toggle-icon,
+.et-db #et-boc .et-l ul.et_mobile_menu li.menu-item-has-children .mobile-toggle-icon,
+.et-db #et-boc .et-l ul.et_mobile_menu li.page_item_has_children .mobile-toggle-icon {
+	width: 44px;
+	height: 100%;
+	padding: 0px !important;
+	max-height: 44px;
+	border: none;
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	z-index: 999;
+	background-color: transparent;
+}
+
+ul.et_mobile_menu>li.menu-item-has-children,
+ul.et_mobile_menu>li.page_item_has_children,
+ul.et_mobile_menu>li.menu-item-has-children .sub-menu li.menu-item-has-children,
+.et-db #et-boc .et-l ul.et_mobile_menu>li.menu-item-has-children,
+.et-db #et-boc .et-l ul.et_mobile_menu>li.page_item_has_children,
+.et-db #et-boc .et-l ul.et_mobile_menu>li.menu-item-has-children .sub-menu li.menu-item-has-children {
+	position: relative;
+}
+
+.et_mobile_menu .menu-item-has-children>a,
+.et-db #et-boc .et-l .et_mobile_menu .menu-item-has-children>a {
+	background-color: transparent;
+}
+
+ul.et_mobile_menu .menu-item-has-children .sub-menu,
+#main-header ul.et_mobile_menu .menu-item-has-children .sub-menu,
+.et-db #et-boc .et-l ul.et_mobile_menu .menu-item-has-children .sub-menu,
+.et-db #main-header ul.et_mobile_menu .menu-item-has-children .sub-menu {
+	display: none !important;
+	visibility: hidden !important;
+}
+
+ul.et_mobile_menu .menu-item-has-children .sub-menu.visible,
+#main-header ul.et_mobile_menu .menu-item-has-children .sub-menu.visible,
+.et-db #et-boc .et-l ul.et_mobile_menu .menu-item-has-children .sub-menu.visible,
+.et-db #main-header ul.et_mobile_menu .menu-item-has-children .sub-menu.visible {
+	display: block !important;
+	visibility: visible !important;
+}
+
+ul.et_mobile_menu li.menu-item-has-children .mobile-toggle-icon,
+.et-db #et-boc .et-l ul.et_mobile_menu li.menu-item-has-children .mobile-toggle-icon {
+	text-align: center;
+	opacity: 1;
+}
+  
+.et_mobile_menu .menu-item-has-children>a {
+  font-weight: 700 !important;
+}
+  
+@media (max-width: 980px) {
+.et_pb_menu--style-left_aligned .et_pb_menu__wrap {
+    -ms-flex-pack: center !important;
+    justify-content: center!important;
+}}  
+
+
+
+jQuery(function($) {
+    $(document).ready(function() {
+        $("body ul.et_mobile_menu li.menu-item-has-children, body ul.et_mobile_menu  li.page_item_has_children").append('<a href="#" class="mobile-toggle-icon"></a>');
+        $('ul.et_mobile_menu li.menu-item-has-children .mobile-toggle-icon, ul.et_mobile_menu li.page_item_has_children .mobile-toggle-icon').click(function(event) {
+            event.preventDefault();
+            $(this).parent('li').toggleClass('mobile-toggle-open');
+            $(this).parent('li').find('ul.children').first().toggleClass('visible');
+            $(this).parent('li').find('ul.sub-menu').first().toggleClass('visible');
+        });
+        iconFINAL = 'P';
+        $('body ul.et_mobile_menu li.menu-item-has-children, body ul.et_mobile_menu li.page_item_has_children').attr('data-icon', iconFINAL);
+        $('.mobile-toggle-icon').on('mouseover', function() {
+            $(this).parent().addClass('active-toggle');
+        }).on('mouseout', function() {
+            $(this).parent().removeClass('active-toggle');
+        })
+    });
+});
+
+			
+			
+				
+				
+				
+				
+			
+				
+				
+			
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				01424 538013 | surelockhomeshastings@yahoo.co.uk
+			
+			
+				
+				
+				
+				
+			
+				
+				
+				
+				
+				
+				
+					
+					
+					
+					
+					
+						
+			  
+				
+			  
+			
+						
+							
+								Home
+Services
+
+	UPVC Lock Specialist
+	Insurance rated locks
+	Keyless Locks
+	Weather Resistant Door Handles & Closures
+
+
+Our Guarantee
+Just moved House
+Contact Us
+
+							
+							
+							
+							
+				
+					
+				
+			
+						
+						
+					
+				
+			
+				
+				
+				
+				
+				
+			
+				
+				
+				
+				
+			
+				
+				
+					
+	
+	
+	
+
+
+
+			
+				
+
+				
+					
+					
+			
+		
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				Locksmith Hastings | Surelock Homes
+			
+			
+				
+				
+				
+				
+				
+				Make an enquiry
+			
+				
+				
+				
+				
+				There is NO Call-Out Charge if you are looking for a locksmith in Hastings with Surelock Homes.
+			
+			
+				
+				
+				
+				
+			
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+					
+					
+						CheckaTrade Member
+						
+					
+				
+			
+			
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+					
+					
+						UPVC LOCK SPECIALIST
+						
+					
+				
+			
+			
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+					
+					
+						INSURANCE RATED LOCKS
+						
+					
+				
+			
+			
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+					
+					
+						DIGITAL LOCKS
+						
+					
+				
+			
+			
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+					
+					
+						NO CALL-OUT CHARGE & FREE QUOTES
+						
+					
+				
+			
+			
+				
+				
+				
+				
+			
+				
+				
+			
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				UPVC Lock Specialist
+			
+				
+				
+				
+				
+				Learn more
+			
+			
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				Insurance rated locks 
+			
+				
+				
+				
+				
+				Learn more
+			
+			
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				Digital Locks
+			
+				
+				
+				
+				
+				Learn more
+			
+			
+				
+				
+				
+				
+				
+				
+				
+					
+					
+					
+				
+				
+				
+					
+					
+					
+				
+				
+				
+					
+					
+					
+				
+				
+				
+					
+					
+					
+				
+				
+				
+					
+					
+					
+				
+				
+				
+					
+					
+					
+				
+				
+				
+					
+					
+					
+				
+				
+				
+					
+					
+					
+				
+				
+			
+				
+				
+				
+				
+			
+				
+				
+			
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+					
+					
+					
+				
+				
+				
+					
+					
+					
+				
+				
+			
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				Locksmith Hastings Covering East Sussex | No Call-Out Charge
+			
+				
+				
+				
+				
+				Surelock Homes supplies a wide range of locksmith services across East Sussex. We are based in Hastings but cover all surrounding areas.
+We offer a full locksmiths Hastings service 7 days a week, all year round with many discounts available for OAP, NHS Staff, emergency services, and all Charities.
+At Surelock Homes we are highly experienced and pride ourselves on a reliable and honest locksmith service every time. This is why we are members of Checkatrade and Trading Standards and offer you the assurances that you are calling the right company for all your locksmith needs. You can read our reviews at Checkatrade and see all the feedback we have received over the years.
+We deliver a full locksmith service to residential and commercial clients in Hastings and East Sussex. Whatever your requirements, our experience locksmiths are available on hand to deal with any potential problems with your locks or security.
+At Surelock Homes we are also uPVC door lock and windows mechanism specialists from faulty locks to multi-point systems.
+			
+			
+				
+				
+				
+				
+			
+				
+				
+			
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				Your Trusted Local Hastings Locksmith
+			
+				
+				
+				
+				
+				We are in no way connected to a National company. We are 100% local and independent which means fast response times and low rates. We do not charge VAT. You can be confident that you will receive an excellent level of service time and time again from Surelock Homes Hastings.
+			
+				Make an enquiry
+			
+			
+				
+				
+				
+				
+			
+				
+				
+			
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				Our Guarantee
+			
+				
+				
+				
+				
+				100% Satisfaction Guarantee
+			
+			
+				
+				
+				
+				
+			
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+					
+					
+						Trained technicians 
+						
+					
+				
+			
+			
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+					
+					
+						Reputable suppliers
+						
+					
+				
+			
+			
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+					l
+					
+						Six-month warranty 
+						
+					
+				
+			
+			
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+					
+					
+						Total satisfaction
+						
+					
+				
+			
+			
+				
+				
+				
+				
+			
+				
+				
+				
+				
+				
+				
+				Find out more
+			
+			
+				
+				
+				
+				
+			
+				
+				
+			
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+					
+				
+				
+				
+					
+						
+						
+							What our clients sayMatthew responded within the same day of  me contacting him.
+Making the appointment was most efficient and prompt.
+Very professional made the process of repairing the lock very smooth.
+Extremely polite and very good value.
+Would definitely recommend him to others.
+							
+						
+					
+				
+				
+				
+				
+			
+			
+				
+				
+				
+					
+						
+						
+							What our clients sayI’ve used Surelock Homes twice now, I was so pleased with the service first time round, I didn’t hesitate to contact them when another door needed attention. Polite, friendly, clean and tidy, knowledgeable, Matt talks you through the locks and keys to make sure you’re happy before he leaves. Very reasonable prices, I trust Surelock Homes and fully recommend them.
+							
+						
+					
+				
+				
+				
+				
+			
+			
+				
+				
+				
+					
+						
+						
+							What our clients sayExcellent service!! It was quick and easy to get hold of Matt on a Sunday morning and he was there as soon possible. Friendly and reliable service. I ended up with a better lock that I had too! Highly recommend Surelock Homes!
+							
+						
+					
+				
+				
+				
+				
+			
+			
+				
+				
+			
+			
+			
+				
+				
+				
+				
+				
+			
+				
+				
+				
+				
+				GET A QUOTE
+				
+				
+				
+					
+						
+				
+				
+				
+				
+				Name
+				
+			
+				
+				
+				
+				
+				Email Address
+				
+			
+				
+				
+				
+				
+				Subject
+				
+						SubjectRepairMaintenanceHome ServiceBusiness/Office Service
+					
+			
+				
+				
+				
+				
+				Message
+				
+			
+						
+						
+							
+							Submit
+						
+						
+					
+				
+			
+			
+			
+				
+				
+				
+				
+			
+				
+				
+			
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				Locksmith locations covered near Hastings
+			
+			
+				
+				
+				
+				
+			
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				Battle
+Beckley
+Bexhill-on-Sea
+Bohemia
+Catsfield
+Brede
+St Lonards On-Sea
+Whatlington 
+Hooe
+Rye Harbour
+iden
+Sandhurst
+			
+			
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				CrowhurstFairlightIckleshamJohn’s CrossMountfieldNinfield
+Etchingham
+Udimore
+Penhurst
+Watling
+Robertsbridge
+Hurst Green
+			
+			
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				Northiam
+Ore
+Peasmarsh
+Pett
+Rye
+Sedlescombe
+Hollington
+East Sussex
+Ashburnham
+Wittersham
+Brightling
+Ewhurst Green
+			
+			
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				Sidley
+Silverhill
+Staplecross
+Three Oaks
+Westfield
+Winchelsea
+Guestling
+Rother District
+Playden
+Newenden
+Pevensey
+			
+			
+				
+				
+				
+				
+			
+				
+				
+			
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				Car Locksmith locations covered near Hastings
+			
+			
+				
+				
+				
+				
+			
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				Ewhurst Green
+Hurst Green
+Sandhurst
+Pevensey
+Brightling
+Robertsbridge
+			
+			
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				Iden
+Newenden
+Wittersham
+Watling
+Rye Harbour
+Playden
+			
+			
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				Ashburnham
+Penhurst
+Hooe
+Rother District
+East Sussex
+Udimore
+			
+				
+				
+				
+				
+				
+			
+			
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				Whatlington
+Guestling
+Hollington
+Etchingham
+St Leonards On Sea
+			
+			
+				
+				
+				
+				
+			
+				
+				
+					
+	
+						
+
+				
+				
+
+			
+
+
+
+	
+			
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				Useful links
+			
+				
+				
+				
+				
+				UPVC Lock SpecialistInsurance rated locksKeyless LocksContactPrivacy Policy
+			
+			
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				Contacts
+			
+				
+				
+				
+				
+				01424 538013
+			
+				
+				
+				
+				
+				info@surelockhomeshastings.co.uk
+			
+			
+				
+				
+				
+				
+			
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				© 2024 Surelock Homes. All rights reserved
+			
+			
+				
+				
+				
+				
+			
+				
+				
+					
+	
+		
+
+			
+		
+		
+
+				
+				var et_animation_data = [{"class":"et_pb_gallery_1","style":"slideBottom","repeat":"once","duration":"1300ms","delay":"0ms","intensity":"23%","starting_opacity":"0%","speed_curve":"ease-in-out"},{"class":"et_pb_text_10","style":"slideBottom","repeat":"once","duration":"1350ms","delay":"0ms","intensity":"20%","starting_opacity":"0%","speed_curve":"ease-in-out"},{"class":"et_pb_divider_0","style":"slideBottom","repeat":"once","duration":"1350ms","delay":"200ms","intensity":"20%","starting_opacity":"0%","speed_curve":"ease-in-out"},{"class":"et_pb_text_11","style":"slideBottom","repeat":"once","duration":"1350ms","delay":"350ms","intensity":"20%","starting_opacity":"0%","speed_curve":"ease-in-out"},{"class":"et_pb_blurb_5","style":"slideBottom","repeat":"once","duration":"1300ms","delay":"0ms","intensity":"20%","starting_opacity":"0%","speed_curve":"ease-in-out"},{"class":"et_pb_blurb_6","style":"slideBottom","repeat":"once","duration":"1300ms","delay":"150ms","intensity":"20%","starting_opacity":"0%","speed_curve":"ease-in-out"},{"class":"et_pb_blurb_7","style":"slideBottom","repeat":"once","duration":"1300ms","delay":"300ms","intensity":"20%","starting_opacity":"0%","speed_curve":"ease-in-out"},{"class":"et_pb_blurb_8","style":"slideBottom","repeat":"once","duration":"1300ms","delay":"450ms","intensity":"20%","starting_opacity":"0%","speed_curve":"ease-in-out"}];
+					var et_link_options_data = [{"class":"et_pb_blurb_0_tb_header","url":"tel:+441424538013","target":"_self"},{"class":"et_pb_blurb_1_tb_header","url":"mailto:info@surelockhomeshastings.co.uk","target":"_self"},{"class":"et_pb_blurb_0","url":"https:\/\/www.checkatrade.com\/trades\/surelockhomeshastings","target":"_blank"},{"class":"et_pb_blurb_1","url":"https:\/\/www.surelockhomeshastings.co.uk\/upvc-lock-specialist\/","target":"_self"},{"class":"et_pb_blurb_2","url":"https:\/\/www.surelockhomeshastings.co.uk\/insurance-rated-locks\/","target":"_self"},{"class":"et_pb_blurb_3","url":"https:\/\/www.surelockhomeshastings.co.uk\/keyless-locks\/","target":"_self"},{"class":"et_pb_blurb_4","url":"https:\/\/www.surelockhomeshastings.co.uk\/contact-us\/","target":"_self"},{"class":"et_pb_text_3","url":"https:\/\/www.surelockhomeshastings.co.uk\/upvc-lock-specialist\/","target":"_self"},{"class":"et_pb_text_5","url":"https:\/\/www.surelockhomeshastings.co.uk\/insurance-rated-locks\/","target":"_self"},{"class":"et_pb_text_7","url":"https:\/\/www.surelockhomeshastings.co.uk\/keyless-locks\/","target":"_self"},{"class":"et_pb_text_3_tb_footer","url":"tel:+441424538013","target":"_self"},{"class":"et_pb_text_4_tb_footer","url":"mailto:info@surelockhomeshastings.co.uk","target":"_self"}];
+			
+	
+Call Now Button
+/* <![CDATA[ */
+var DIVI = {"item_count":"%d Item","items_count":"%d Items"};
+var et_builder_utils_params = {"condition":{"diviTheme":true,"extraTheme":false},"scrollLocations":["app","top"],"builderScrollLocations":{"desktop":"app","tablet":"app","phone":"app"},"onloadScrollLocation":"app","builderType":"fe"};
+var et_frontend_scripts = {"builderCssContainerPrefix":"#et-boc","builderCssLayoutPrefix":"#et-boc .et-l"};
+var et_pb_custom = {"ajaxurl":"https:\/\/www.surelockhomeshastings.co.uk\/wp-admin\/admin-ajax.php","images_uri":"https:\/\/www.surelockhomeshastings.co.uk\/wp-content\/themes\/Divi\/images","builder_images_uri":"https:\/\/www.surelockhomeshastings.co.uk\/wp-content\/themes\/Divi\/includes\/builder\/images","et_frontend_nonce":"6b0eadee0f","subscription_failed":"Please, check the fields below to make sure you entered the correct information.","et_ab_log_nonce":"d9cb1d7389","fill_message":"Please, fill in the following fields:","contact_error_message":"Please, fix the following errors:","invalid":"Invalid email","captcha":"Captcha","prev":"Prev","previous":"Previous","next":"Next","wrong_captcha":"You entered the wrong number in captcha.","wrong_checkbox":"Checkbox","ignore_waypoints":"no","is_divi_theme_used":"1","widget_search_selector":".widget_search","ab_tests":[],"is_ab_testing_active":"","page_id":"18276","unique_test_id":"","ab_bounce_rate":"5","is_cache_plugin_active":"no","is_shortcode_tracking":"","tinymce_uri":"https:\/\/www.surelockhomeshastings.co.uk\/wp-content\/themes\/Divi\/includes\/builder\/frontend-builder\/assets\/vendors","accent_color":"#7EBEC5","waypoints_options":[]};
+var et_pb_box_shadow_elements = [];
+/* ]]> */
+
+
+
+
+
+/* <![CDATA[ */
+var et_core_api_spam_recaptcha = {"site_key":"6Ld0V44hAAAAAP1pPVknN4N0edYAXQDbOKbcu2AX","page_action":{"action":"www_surelockhomeshastings_co_uk"}};
+/* ]]> */
+
+
+
+
+
+
+
+
+/* <![CDATA[ */
+var rtrs = {"pro":"","recaptcha":"","recaptcha_sitekey":"6Le8AB8pAAAAACaM_psehyUsigKjNbun-_gjYSeR","highlight":"Highlight?","remove_highlight":"Remove Highlight?","loading":"Loading...","edit":"Edit","upload_img":"Upload Image","upload_video":"Upload Video","sure_txt":"Are you sure to delete?","pro_label":"[PRO]","pro_cons_limit":"3","pros_alt_txt":"3 pros field are allowed for free version.","cons_alt_txt":"3 cons field are allowed for free version.","write_txt":"Write here!","nonce":"0e2fc31b03","ajaxurl":"https:\/\/www.surelockhomeshastings.co.uk\/wp-admin\/admin-ajax.php","post_id":"18276","current_page":"1"};
+/* ]]> */
+
+
+
+
+/* <![CDATA[ */
+var et_pb_motion_elements = {"desktop":[],"tablet":[],"phone":[]};
+/* ]]> */
+
+
+
+/* <![CDATA[ */
+var et_pb_sticky_elements = {"et_pb_section_1_tb_header":{"id":"et_pb_section_1_tb_header","selector":".et_pb_section_1_tb_header","position":{"desktop":"top","tablet":"none","phone":"none"},"topOffset":"0px","bottomOffset":"0px","topLimit":"none","bottomLimit":"none","offsetSurrounding":"on","transition":"on","styles":{"module_alignment":{"desktop":"","tablet":"","phone":""},"positioning":"relative"},"stickyStyles":{"position_origin_r":"top_left","horizontal_offset":"","vertical_offset":""}},"et_pb_section_2_tb_header":{"id":"et_pb_section_2_tb_header","selector":".et_pb_section_2_tb_header","position":{"desktop":"top","tablet":"none","phone":"none"},"topOffset":"0px","bottomOffset":"0px","topLimit":"none","bottomLimit":"none","offsetSurrounding":"on","transition":"on","styles":{"module_alignment":{"desktop":"","tablet":"","phone":""},"positioning":"relative"},"stickyStyles":{"position_origin_r":"top_left","horizontal_offset":"","vertical_offset":""}}};
+/* ]]> */
+
+
+{
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness"
+}	
+	
+
