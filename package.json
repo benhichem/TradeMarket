@@ -7,7 +7,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "rimraf dist/* && tsc",
-    "start": "node dist/index.js",
+    "start": "tsc && node dist/index.js",
     "dev": "mprocs"
   },
   "keywords": [],
@@ -15,6 +15,7 @@
   "license": "ISC",
   "dependencies": {
     "@destruct/logger": "^1.2.2",
+    "@types/jsonexport": "^3.0.5",
     "@types/node": "^22.1.0",
     "axios": "^1.7.3",
     "cheerio": "1.0.0-rc.12",
@@ -22,6 +23,7 @@
     "puppeteer": "^22.15.0",
     "puppeteer-extra": "^3.3.6",
     "puppeteer-extra-plugin-stealth": "^2.11.2",
-    "rimraf": "^6.0.1"
+    "rimraf": "^6.0.1",
+    "typescript": "^5.5.4"
   }
 }

@@ -8,7 +8,7 @@ export default class TrustTrader extends PuppeteerScrapper {
   private readonly urls: Array<string>
   public ProfileAvaliable: Array<any>
   constructor(private readonly url: string) {
-    super(false,
+    super(true,
       { headless: false })
     this.urls = []
     this.ProfileAvaliable = []
@@ -101,8 +101,9 @@ export default class TrustTrader extends PuppeteerScrapper {
 
         console.log(profile)
         this.ProfileAvaliable.push(profile)
+        this.payload.push(profile)
       }
-      fs.writeFileSync('tempoutput.json', JSON.stringify(this.ProfileAvaliable))
+      fs.writeFileSync('tempoutput34.json', JSON.stringify(this.ProfileAvaliable))
     } catch (error) {
       console.log(error)
     }

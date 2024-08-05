@@ -33,8 +33,8 @@ breaking down the scraper into two parts
 ## Steps 
 
 ### step 1 
-- [ ] scrape TradesMarket 
-    - [ ] collect every profile avaliable 
+- [x] scrape TradesMarket 
+    - [x] collect every profile avaliable 
         the information needed 
         * Company_name: string 
         * Tel : string 
@@ -45,11 +45,10 @@ breaking down the scraper into two parts
     - [ ] save input into a temporary json file 
 
 ### step 2
-- [ ] read from temporary json file
-- [ ] Visit the website.
-- [ ] away to always locate the contact form.
-- [ ] scrape email if its publicly avaliable. 
-- [ ] Save output to csv.
+- [x] read from temporary json file
+- [x] Visit the website.
+- [x] scrape email if its publicly avaliable. 
+- [x] Save output to csv.
 
 ### cleanup Process 
 - [ ] delete the temporary json file after all objects finished. 
