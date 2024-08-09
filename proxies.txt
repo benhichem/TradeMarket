@@ -1,0 +1,5 @@
+gate.smartproxy.com:10096:spd1dfuztu:2gXmuk3v5lZaVCbb3p
+gate.smartproxy.com:10097:spd1dfuztu:2gXmuk3v5lZaVCbb3p
+gate.smartproxy.com:10098:spd1dfuztu:2gXmuk3v5lZaVCbb3p
+gate.smartproxy.com:10099:spd1dfuztu:2gXmuk3v5lZaVCbb3p
+gate.smartproxy.com:10100:spd1dfuztu:2gXmuk3v5lZaVCbb3p

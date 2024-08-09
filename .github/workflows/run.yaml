@@ -1,0 +1,19 @@
+name: trustTrades
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: INSTALATION
+        run: npm install 
+      - name: Run Application 
+        timeout-minutes: 2880
+        run: npm run start
+      - name: Save the generated files
+        if: always()
+        uses: stefanzweifel/git-auto-commit-action@v4

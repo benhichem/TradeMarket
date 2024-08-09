@@ -50,6 +50,13 @@ breaking down the scraper into two parts
 - [x] scrape email if its publicly avaliable. 
 - [x] Save output to csv.
 
+
+### libs 
+
+- [ ] Proxy integration 
+- [ ] List Run
+- [ ] make sure to save after each link
+- [x] updated TradesMarket from puppeteer to cheerio 
 ### cleanup Process 
 - [ ] delete the temporary json file after all objects finished. 
 

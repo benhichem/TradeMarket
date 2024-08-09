@@ -1,6 +1,6 @@
 import axios from "axios";
 import cheerio from "cheerio";
-import fs from "node:fs"
+import { Profile } from "src/types";
 
 async function GetPageEmail(url: string) {
   try {
@@ -41,28 +41,34 @@ async function getContactButton(url: string) {
   }
 }
 
-//TODO: Please update Profile Type here
-
-export default async function GetEmails(Profiles: Array<any>,output:string) {
+/**
+ * what this function will do ? 
+ * it will make an axios get request to then load the data into cheerio then using an email regex to get the email 
+ * if an email was found great if not it will look for contact page and then create the link and make the checks for page email 
+ *
+ * @param Profiles[] 
+ * @returns Promise<Profiles[]>
+ */
+export default async function GetEmails(Profiles: Array<Profile>): Promise<Array<Profile>> {
   for (let index = 0; index < Profiles.length; index++) {
     const element = Profiles[index];
-    if (element === undefined) return
-    if (element.website !== null) {
-      let initialSearch = await GetPageEmail(element.website)
+    if (element === undefined) continue;
+    if (element.Website !== null) {
+      let initialSearch = await GetPageEmail(element.Website)
       element['emails'] = [...new Set(initialSearch)]
       if (initialSearch === null) {
-        const buttons = await getContactButton(element.website)
+        const buttons = await getContactButton(element.Website)
         if (buttons !== null) {
           if (buttons.href!.includes('http')) {
             const SecondSearch = await GetPageEmail(buttons.href!)
             element['emails'] = [...new Set(SecondSearch)]
           } else if (buttons.href!.includes('contact')) {
             console.log(buttons)
-            console.log(`${element.website.replace(/\/$/, '')}/${buttons.href}`)
-            const SecondSearch2 = await GetPageEmail(`${element.website.replace(/\/$/, '')}/${buttons.href}`)
+            console.log(`${element.Website.replace(/\/$/, '')}/${buttons.href}`)
+            const SecondSearch2 = await GetPageEmail(`${element.Website.replace(/\/$/, '')}/${buttons.href}`)
             console.log(SecondSearch2)
             element['emails'] = [...new Set(SecondSearch2)]
-          }else{
+          } else {
             const SecondSearch3 = await GetPageEmail(buttons.href!)
             element['emails'] = [...new Set(SecondSearch3)]
           }
@@ -71,32 +77,7 @@ export default async function GetEmails(Profiles: Array<any>,output:string) {
     }
     console.log(element)
   }
-
-
-  const csvString = [
-    [
-      "Mob",
-      "Tel",
-      "CompanyType",
-      "ownerName",
-      "website",
-      "company",
-      "emails"
-    ],
-    ...Profiles.map(item => [
-      item.Mob,
-      item.Tel,
-      item.CompanyType,
-      item.ownerName,
-      item.website,
-      item.company,
-      item.emails
-    ])
-  ]
-    .map(e => e.join(","))
-    .join("\n");
-  fs.writeFileSync(output, csvString)
-  console.log('File written ')
+  return Profiles
 }
 
 

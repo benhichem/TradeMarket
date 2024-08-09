@@ -3,7 +3,7 @@ export const TrustSearchResultSelectors = {
   name: "a.profile-card__heading-link",
   trust_trader_profile_url: "a.profile-card__heading-link",
   phones: "ul.profile-card__tels",
-
+  pages: "p.pagination__page-count",
   // TODO: only after navigating to trust_trader_profile 
   website: "a.profile-opening__cta-link--website"
 }

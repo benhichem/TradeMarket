@@ -1,9 +1,7 @@
 import PuppeteerScrapper from "../wrappers/puppeteer_provider.js";
 import { TrustProfileSelectors, TrustSearchResultSelectors } from "../lib/selectors.js";
 import fs from "node:fs"
-import { profileEnd } from "console";
 // TODO: Please add the Type for profile 
-//
 export default class TrustTrader extends PuppeteerScrapper {
   private readonly urls: Array<string>
   public ProfileAvaliable: Array<any>
