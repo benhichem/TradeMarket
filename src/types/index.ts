@@ -10,7 +10,9 @@ export interface Profile {
   Website: string | null;
   OwnerName: string | null;
   CompanyType: string | null
-  Mob: string | null;
-  Tel: string | null;
-  emails: Array<string>
+  Mob:string | null; 
+  Tel:string | null; 
+  emails:Array<string>
+
+
 }

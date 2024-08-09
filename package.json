@@ -18,12 +18,15 @@
     "@types/jsonexport": "^3.0.5",
     "@types/node": "^22.1.0",
     "axios": "^1.7.3",
+    "axios-proxy-fix": "^0.16.3",
     "cheerio": "1.0.0-rc.12",
+    "csv-parser": "^3.0.0",
     "mprocs": "^0.7.1",
     "puppeteer": "^22.15.0",
     "puppeteer-extra": "^3.3.6",
     "puppeteer-extra-plugin-stealth": "^2.11.2",
     "rimraf": "^6.0.1",
-    "typescript": "^5.5.4"
+    "typescript": "^5.5.4",
+    "xlsx": "^0.18.5"
   }
 }

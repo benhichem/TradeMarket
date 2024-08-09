@@ -1,10 +1,9 @@
-import cheerio, { AnyNode, Cheerio } from "cheerio"
+import cheerio from "cheerio"
 import axios from "axios"
 import { TrustSearchResultSelectors, TrustProfileSelectors } from "../lib/selectors.js"
 import { Profile } from "src/types/index.js"
 import GetEmails from "./email_collector.js"
 
-const TrustTraderUrl = "https://www.trustatrader.com/search?trade_name=Locksmith&search_trade_id=5b4cbdcb8811d346b846da5f&location_str=Hastings&lat=&lon=&trader=&search_trader_id"
 
 async function GetPagesUrl(url: string): Promise<Array<string>> {
   try {
@@ -24,14 +23,11 @@ async function GetPagesUrl(url: string): Promise<Array<string>> {
   }
 }
 
-//TODO : No return type set yet
+//DONE : No return type set yet
 async function ScrapeTrustUrlPage(url: string): Promise<Profile | null> {
   try {
     const response = await axios.get(url)
     const $ = cheerio.load(response.data)
-
-
-
     let Mob = null;
     let Tel = null;
     let ownerName = null;
@@ -81,12 +77,6 @@ async function ScrapeTrustUrlPage(url: string): Promise<Profile | null> {
     }
 
     // Now Mob and Tel variables contain the respective values, if found
-    console.log('Mob:', Mob);
-    console.log('Tel:', Tel);
-    console.log(companyName)
-    console.log(website)
-    console.log(ownerName?.trim())
-    console.log(CompanyType?.trim())
     return {
       CompanyType: CompanyType ? CompanyType.trim() : null,
       CompanyName: companyName ? companyName.trim() : null,
@@ -105,28 +95,60 @@ async function ScrapeTrustUrlPage(url: string): Promise<Profile | null> {
 
 
 
-try {
-  let Profiles: Array<Profile> = []
-  const response = await axios.get(TrustTraderUrl)
-  const $ = cheerio.load(response.data)
-  const Avaliable_results = $(TrustSearchResultSelectors.profile_cards)
-  if (Avaliable_results.length === 0) {
-    console.log('[-] No results Found ...')
-  } else {
-    const pages_text = $(TrustSearchResultSelectors.pages).text()
-    const pages_number = pages_text.split(' of ') ? eval(pages_text.split(' of ')[1]) : 1
-    console.log('[+] Pages Found ', pages_number)
-    for (var i = 1; i <= pages_number; i++) {
-      const urls = await GetPagesUrl(`${TrustTraderUrl}&page=${i}`)
-      for (var j = 0; j < urls.length; j++) {
-        const Profile = await ScrapeTrustUrlPage(urls[j])
-        if (Profile) Profiles.push(Profile)
-      }
-    }
 
-    console.log('[+] Collecting emails ...')
-    await GetEmails(Profiles,"cherioTest.csv")
+
+
+/*
+ * what does this function do ? 
+ * this function will scrape The TrustATrader website for entries and then scrape each entry's wesbite if avaliable for the email 
+ * how does it do it ? 
+ * it uses cheerio and axios for both stages 
+ * any other features ? 
+ * TODO: proxy not yet implemented ...
+ * @params URL: string 
+ * @return Promise<Array<Profile>>
+ * */
+export default async function ScrapeProfiles(Url: string): Promise<Array<Profile>> {
+  try {
+    console.log('[+] scraping :: ', Url)
+    let Profiles: Array<Profile> = []
+    const response = await axios.get(Url)
+    const $ = cheerio.load(response.data)
+    const Avaliable_results = $(TrustSearchResultSelectors.profile_cards)
+    if (Avaliable_results.length === 0) {
+      console.log('[-] No results Found ...')
+      return []
+    } else {
+      const pages_text = $(TrustSearchResultSelectors.pages).text()
+      if (pages_text === "") {
+        console.log("only one page")
+        const urls = await GetPagesUrl(Url)
+        for (var x = 0; x < urls.length; x++) {
+          const profile = await ScrapeTrustUrlPage(urls[x])
+          if (profile) Profiles.push(profile)
+        }
+      } else {
+        const pages_number = pages_text.split(' of ') ? eval(pages_text.split(' of ')[1]) : 1
+        console.log('[+] Pages Found ', pages_number)
+        for (var i = 1; i <= pages_number; i++) {
+          const urls = await GetPagesUrl(`${Url}&page=${i}`)
+          for (var j = 0; j < urls.length; j++) {
+            const Profile = await ScrapeTrustUrlPage(urls[j])
+            if (Profile) Profiles.push(Profile)
+          }
+        }
+
+      }
+      console.log(`[+] Collecting emails for ${Profiles.length} Profile ...`)
+
+      let results = await GetEmails(Profiles)
+      return results
+    }
+  } catch (error) {
+    console.log(error)
+    return []
   }
-} catch (error) {
-  console.log(error)
 }
+
+
+// console.log(await ScrapeProfiles("https://www.trustatrader.com/search?trade_name=Aerial+%26+Satellite+Installation&search_trade_id=5b4cbdca8811d346b846d91a&location_str=Stockport&lat=&lon=&trader=&search_trader_id="))
